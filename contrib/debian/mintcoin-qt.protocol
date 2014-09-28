@@ -1,6 +1,6 @@
 [Protocol]
-exec=x11coin-qt '%u'
-protocol=x11coin
+exec=marble-qt '%u'
+protocol=marble
 input=none
 output=none
 helper=true

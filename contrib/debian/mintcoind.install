@@ -1,2 +1,2 @@
-debian/bin/x11coind usr/bin
-src/x11coind usr/lib/x11coin
+debian/bin/marbled usr/bin
+src/marbled usr/lib/marble
