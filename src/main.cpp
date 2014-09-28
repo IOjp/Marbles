@@ -2533,8 +2533,7 @@ bool LoadBlockIndex(bool fAllowNew)
     //
     if (mapBlockIndex.empty())
     {
-        if (!fAllowNew)
-            return false;
+  
 
         // Genesis block
         const char* pszTimestamp = "The Paoli Chamber of Commerce has announced the winners of the 2014 Paoli Fall Festival Parade and contests.";
