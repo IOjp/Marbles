@@ -2531,13 +2531,13 @@ bool LoadBlockIndex(bool fAllowNew)
     //
     // Init with genesis block
     //
-    printf("Starting");
+
     if (mapBlockIndex.empty())
     {
-      printf("1");
+
         if (!fAllowNew)
             return false;
-printf("2");
+
         // Genesis block
         const char* pszTimestamp = "The Paoli Chamber of Commerce has announced the winners of the 2014 Paoli Fall Festival Parade and contests.";
         CTransaction txNew;
@@ -2577,9 +2577,7 @@ printf("2");
         printf("block.nTime = %u \n", block.nTime);
         printf("block.nNonce = %u \n", block.nNonce);
 
-printf("3");
-
-        assert(block.hashMerkleRoot == uint256("7dee8bb70b6e8338cbf0a732ab387229e44ed9deb40d1256a2d8070525784474"));
+        assert(block.hashMerkleRoot == uint256("cd8287c2504056140115cca261f9df5a6c8e6952dc485f909050b6120f89c60b"));
 		assert(block.GetHash() == (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet));
 
         // Start new block file
