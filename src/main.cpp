@@ -2554,7 +2554,7 @@ bool LoadBlockIndex(bool fAllowNew)
         block.nVersion = 1;
         block.nTime    = 1411944258;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
-        block.nNonce   = 193526;
+        block.nNonce   = 0;
         if (false ) {
 
         // This will figure out a valid hash and Nonce if you're
